@@ -1,7 +1,7 @@
 import {Component } from '@angular/core'
 
 @Component({
-selector: 'Hallo-wohrod',
+selector: 'hallo-wohrod',
 template: '<h2>Helloh Word</h2>'
 })
 

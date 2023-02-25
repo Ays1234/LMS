@@ -1,7 +1,11 @@
 <h1>{{ judul }}</h1>
 <h2>Helloh World udah ngerasa jago wkwk</h2>
 <img [src]="gambar" width="200">
-<button [disabled]="active">Edit</button>
+<!-- <button [disabled]="active" (click)="onEditClick()">Edit</button> -->
+<button (click)="onEditClick()">Edit</button>
+<div *ngIf="active" else noEdit>
+<p [contentEditable]="active">Te ajah</p>
+</div>
 <P>
     <button (click)="hello('angular')">angular</button>
     <button (click)="hello('yogi')">yogi</button>
